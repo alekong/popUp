@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="promptbox.css">
+<script src="promptbox.js"></script>
+<script>
+function changeText(val){
+	document.getElementById('status').innerHTML = val;
+}
+</script>
+</head>
+<body>
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+<h1 id="status">Alpha testing of new Prompt for Initium</h1>
+<button class="stolenInitium" onclick="Prompt.render('Enter campname','changeText')">Test camp setup</button>
+<button class="stolenInitium" onclick="Confirm.render('Hello adventurer')">Confirm</button>
+</body>
+</html>
