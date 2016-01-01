@@ -82,7 +82,7 @@ body {
     appearance: button;
     background-image: url("main-button-backing.jpg");
     width: 200px;
-    height: 65px;
+    height: 55px;
     margin: 0 auto;
     text-align: auto;
     font-size: 20px;
@@ -94,12 +94,12 @@ body {
     color: #FFFFFF;
     text-decoration: none;
 float: left;
-
-
+position: relative;
+top: 92px;
 }
 
 .popup_body {
-    width: 700px;
+    width: 600px;
     min-height: 100px;
     padding-top: 1em;
     background-image: url('info-category-body-part2.png');
