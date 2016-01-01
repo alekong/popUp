@@ -35,7 +35,7 @@ function CustomConfirm(){
 		
 		document.getElementById('dialogboxhead').innerHTML = "Confirm that action";
 	    document.getElementById('dialogboxbody').innerHTML = dialog;
-		document.getElementById('dialogboxfoot').innerHTML = '<button class= "stolenInitium2" onclick="Confirm.yes(\''+op+'\',\''+id+'\')">Confirm</button> <button class= "stolenInitium2" onclick="Confirm.no()">Cancel</button>';
+		document.getElementById('dialogboxfoot').innerHTML = '<button class= "stolenInitium2" onclick="Confirm.yes(\''+op+'\',\''+id+'\')">Confirm</button> <button class= "stolenInitium2" style="float: right" onclick="Confirm.no()">Cancel</button>';
 	}
 	this.no = function(){
 		document.getElementById('dialogbox').style.display = "none";
@@ -65,7 +65,7 @@ function CustomPrompt(){
 		document.getElementById('dialogboxhead').innerHTML = "Camp setup";
 	    document.getElementById('dialogboxbody').innerHTML = dialog;
 		document.getElementById('dialogboxbody').innerHTML += '<br><input id="prompt_value1">';
-		document.getElementById('dialogboxfoot').innerHTML = '<button class="stolenInitium2" onclick="Prompt.ok(\''+func+'\')">Confirm</button> <button class="stolenInitium2" onclick="Prompt.cancel()">Cancel</button>';
+		document.getElementById('dialogboxfoot').innerHTML = '<button class="stolenInitium2" onclick="Prompt.ok(\''+func+'\')">Confirm</button> <button class="stolenInitium2" style="float: right" onclick="Prompt.cancel()"">Cancel</button>';
 	}
 	this.cancel = function(){
 		document.getElementById('dialogbox').style.display = "none";
